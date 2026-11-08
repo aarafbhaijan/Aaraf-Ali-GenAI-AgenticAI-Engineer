@@ -50,29 +50,32 @@ Generative AI and Agentic AI engineer with nearly **3 years of software engineer
 ## Experience
 
 ### Software Engineer · Applied Cloud Computing
-*August 2025 – Present · Mumbai, India · Clients: NDTV Profit, Axis Bank*
+*August 2025 – Present · Mumbai, India · Clients: NDTV Profit, Axis Bank*  
+*Official designation: Frontend Developer*
 
-<img src="assets/ndtv-profit.png" width="18" align="center" alt=""/> **NDTV Profit: GenAI & Agentic AI media platform** (sole engineer, proof of concept → production · [details](#featured-client-projects))
-- Built a **multi-agent system on AWS Bedrock** with **LangGraph and LangChain** that turns a business news channel's broadcasts into publish-ready content. A planning agent dispatches specialist agents in parallel through typed Pydantic schemas.
-- Built the **RAG pipeline** over the archive (chunking, embeddings, pgvector). When dense retrieval alone kept missing passages, I moved it to **hybrid search with reciprocal rank fusion and a cross-encoder reranker**, and gated it in **CI on Recall@10, MRR, faithfulness and p95 latency**.
-- Built the **Node.js / TypeScript (Express 5, MySQL)** media backend on AWS: live transcription, a clip-harvest pipeline, an SNS event system and a cron scheduler.
-- Traced a **production crash loop** to malformed LLM output under load and fixed it with schema validation at every agent boundary and per-agent failure isolation.
-- Deployed on **AWS EKS** with autoscaling, liveness and readiness probes, and zero-downtime rolling releases, traced with OpenTelemetry.
+<img src="assets/ndtv-profit.png" width="18" align="center" alt=""/> **NDTV Profit: Generative AI platform over an enterprise content archive** · *client engagement; sole engineer from proof of concept to production, with ongoing production support* · [details](#featured-client-projects)
+- Built a **generative AI multi-agent system on AWS Bedrock** with **LangGraph and LangChain** that turns a business news channel's broadcast archive into publish-ready content. A planning agent dispatches specialist agents in parallel through typed Pydantic schemas, with session state in PostgreSQL.
+- Built the **RAG pipeline** that grounds generation in the archive (chunking, embeddings, pgvector). When dense retrieval alone kept missing relevant passages, I moved it to **hybrid dense and lexical search with reciprocal rank fusion and a cross-encoder reranker**, measured on a fixed evaluation set with Recall@10 and MRR.
+- Turned that evaluation into a **CI gate on Recall@10, MRR, faithfulness and p50/p95 latency**, so a chunking or prompt change that lowers retrieval or answer quality fails the build before it reaches production.
+- Traced a **production crash loop** to the LLM returning malformed structured output under load. I added schema validation at every agent boundary with per-agent failure isolation, so one bad response now fails a single stage instead of the whole job.
+- Automated a **six-stage content workflow** with scheduled jobs, AWS SNS events and atomic job pickup, removing manual hand-offs between stages. The ingestion pipeline runs **ten concurrent live sessions**, with health checks every thirty seconds that restart a stalled session automatically.
+- Deployed the platform on **AWS EKS** with horizontal autoscaling, liveness and readiness probes, resource limits and zero-downtime rolling releases, instrumented end to end with OpenTelemetry tracing and structured logging.
 
-<img src="assets/axis-bank.svg" width="18" align="center" alt=""/> **Axis Bank: Agentic AI IT assistant & automation platform** (sole engineer for the Python service and data layer)
-- I'm exposing the bank's operational APIs to an **Azure AI Foundry agent through tool calling**, authorised through **Microsoft Entra ID**, so the agent can act only within the requesting user's own permissions.
-- Built the **Python FastAPI** service and **Aurora PostgreSQL** data layer, and deployed **4 microservices on AWS EKS** with OAuth 2.0 + PKCE.
+<img src="assets/axis-bank.svg" width="18" align="center" alt=""/> **Axis Bank: Enterprise IT automation platform** · *client engagement; sole engineer for the Python service and data layer*
+- Built the **Python FastAPI** service and **Aurora PostgreSQL** data layer behind the bank's device inventory (schema design, migrations, indexing and schema-level isolation), and deployed **four microservices on Kubernetes** with OAuth 2.0 and PKCE.
+- Currently exposing those operational APIs to an **Azure AI Foundry agent through tool calling**, so employees can resolve routine device and access requests through an assistant instead of a support ticket. Every call is authorised through **Microsoft Entra ID**, so the agent can act only within the requesting user's own permissions.
 
-**API orchestration platform: Python execution service**
-- Owned the Python scripting connector and its execution service end to end: process-isolated, with time, memory and concurrency limits, and covered by about 600 lines of pytest.
+**API Orchestration Platform: Python execution service** · *Applied Cloud Computing product built by a larger team; I individually owned one feature end to end*
+- Built the Python scripting connector and the execution service behind it: stateless and process-isolated, with time, memory and concurrency limits and halt-on-failure semantics, covered by about 600 lines of pytest.
 
-### Frontend Developer → Team Lead · Soliteck Digisolutions
-*March 2024 – August 2025 · Navi Mumbai, India · Fintech*
+### Frontend Developer, promoted to Team Lead · Soliteck Digisolutions
+*March 2024 – August 2025 · Navi Mumbai, India · Fintech*  
+*Intern March – May 2024 · full-time May 2024 – August 2025 · Team Lead from April 2025*
 - **Built a full-fledged fintech product from scratch**, owning the frontend end to end: architecture, the component system, state management and API integration.
 - **Made the key design and technical decisions** for the UI: the framework and project structure, design patterns, coding standards and the review process.
 - **Built and deployed the product on the company's own infrastructure**, taking it from first commit to production.
 - **Promoted to Team Lead** in April 2025, within a year of going full-time. I **led the UI team**, ran code reviews and **mentored junior developers**.
-- Shipped **10+ fintech products** (including Soliteck Pay and Rio-Money Pay) in **Next.js, React and TypeScript** against service APIs.
+- Shipped **10+ fintech products** (including Soliteck Pay and Rio-Money Pay) in **Next.js, React and TypeScript** against C#/.NET service APIs.
 - Integrated **5 payment gateways** (PhonePe, Razorpay, BillAvenue, GoPay and UnLimit Pay) with idempotent webhooks and reconciliation, so a callback delivered twice can't create a duplicate transaction.
 
 ---
