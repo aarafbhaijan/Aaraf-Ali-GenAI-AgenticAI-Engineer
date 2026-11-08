@@ -20,7 +20,7 @@
 
 Generative AI and Agentic AI engineer with nearly **3 years of software engineering experience**, building LLM applications, RAG pipelines and multi-agent systems and running them in production. My primary languages are **Python** and **TypeScript**, and I'm a hands-on **full-stack engineer** underneath the AI work.
 
-- **GenAI & Agentic AI:** I took **NDTV Profit's** multi-agent media platform from proof of concept to production on **AWS Bedrock**, and I'm building an **Azure AI Foundry agent with tool calling** for **Axis Bank**. I work with **LangChain and LangGraph**, and I'm currently building with **CrewAI**.
+- **GenAI & Agentic AI:** I took **NDTV Profit's** multi-agent media platform from proof of concept to production on **AWS Bedrock**, and I'm building an **Azure AI Foundry agent with tool calling** for **Axis Bank**. I work with **LangChain and LangGraph**, and I'm currently building with **CrewAI**. I'm also building **my own small language model (SLM) with speech functionality**.
 - **Backend:** production services in **Python (FastAPI, Pydantic)** and **Node.js (Express, TypeScript)**: REST APIs, microservices, event-driven workflows, schedulers and job queues.
 - **Full stack (MERN):** end-to-end products with **MongoDB, Express, React and Node.js**, plus **Next.js**. That includes 10+ shipped fintech products and a team-lead role.
 - **Databases:** **PostgreSQL** (and Aurora, pgvector), **MySQL**, **MongoDB**, **DynamoDB** and **Redis**, covering schema design, migrations, indexing, transactions and vector search.
@@ -154,6 +154,11 @@ A JSON API that sells assigned seats and stays correct under an on-sale stampede
 - **Energy Intelligence Platform:** a serverless, event-driven platform for managing renewable-energy projects. It uses Lambda, API Gateway, **EventBridge**, **DynamoDB**, S3 presigned uploads and **Cognito** auth, all defined in **AWS CDK**, with dead-letter-queue redrive and 156 unit tests at about 95% coverage.
 - **Events Catalog API:** five TypeScript Lambdas behind an API Gateway HTTP API, deployed with CDK, with cursor pagination, Zod validation and handler tests using fake API Gateway events.
 - **Todo CRUD API:** a serverless CRUD API on Lambda, API Gateway and DynamoDB.
+
+### 🗣️ My own SLM with speech *(in progress)*
+**Stack:** Python · small language models · speech recognition · speech synthesis
+
+- Building **my own small language model (SLM)** from the ground up, with **speech functionality**, so you can talk to it and hear it answer instead of only typing.
 
 ### 🛠️ Multi-Agent AIOps Copilot *(in progress)*
 **Stack:** Python · LangGraph · PostgreSQL · pgvector · Redis · MCP · Ollama
