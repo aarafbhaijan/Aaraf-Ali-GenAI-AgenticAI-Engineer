@@ -19,7 +19,8 @@ I build LLM applications, RAG pipelines and multi-agent systems, and run them in
 
 I'm a **Generative AI and Agentic AI engineer** with nearly **3 years** of software engineering experience. **Python** and **TypeScript** are my primary languages, and I build backends in both: **FastAPI** on the Python side and **Node.js / Express** on the TypeScript side.
 
-- I was the **sole engineer** who took a generative AI multi-agent platform for a **national business news channel** from proof of concept to production on **AWS Bedrock and EKS**.
+- I took **NDTV Profit's GenAI & Agentic AI media platform** from proof of concept to production: a multi-agent pipeline on **AWS Bedrock**, a **Node.js / TypeScript** media backend on AWS, and deployment on **EKS**.
+- I'm building an **Azure AI Foundry agent with tool calling** for **Axis Bank**, so employees can resolve IT requests through an assistant within their own permissions.
 - I cover the whole GenAI lifecycle: prompts and schemas, tool calling, retrieval and reranking, evaluation gated in CI, and cost and latency tracking.
 - My everyday stack is **LangGraph, LangChain, FastAPI and Pydantic**, with **Next.js / React** when the product needs a front end.
 
@@ -41,6 +42,7 @@ I'm a **Generative AI and Agentic AI engineer** with nearly **3 years** of softw
 
 ![AWS Bedrock](https://img.shields.io/badge/AWS%20Bedrock-FF9900?style=flat&logo=amazonaws&logoColor=white)
 ![Azure AI Foundry](https://img.shields.io/badge/Azure%20AI%20Foundry-0078D4?style=flat&logo=microsoftazure&logoColor=white)
+![Claude on Bedrock](https://img.shields.io/badge/Claude%20Sonnet%20(Bedrock)-D97757?style=flat&logo=anthropic&logoColor=white)
 ![Groq](https://img.shields.io/badge/Groq-F55036?style=flat)
 ![Ollama](https://img.shields.io/badge/Ollama-000000?style=flat&logo=ollama&logoColor=white)
 ![Prompt Engineering](https://img.shields.io/badge/Prompt%20Engineering-6E40C9?style=flat)
@@ -84,6 +86,8 @@ I'm a **Generative AI and Agentic AI engineer** with nearly **3 years** of softw
 ![Express](https://img.shields.io/badge/Express-000000?style=flat&logo=express&logoColor=white)
 ![REST APIs](https://img.shields.io/badge/REST%20APIs-555555?style=flat)
 ![Microservices](https://img.shields.io/badge/Microservices-555555?style=flat)
+![SSE](https://img.shields.io/badge/Server--Sent%20Events-555555?style=flat)
+![Zod](https://img.shields.io/badge/Zod-3E67B1?style=flat&logo=zod&logoColor=white)
 ![OAuth 2.0](https://img.shields.io/badge/OAuth%202.0%20%2B%20PKCE-555555?style=flat)
 ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat&logo=pytest&logoColor=white)
 
@@ -102,6 +106,7 @@ I'm a **Generative AI and Agentic AI engineer** with nearly **3 years** of softw
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=flat&logo=postgresql&logoColor=white)
 ![Aurora](https://img.shields.io/badge/Aurora%20PostgreSQL-527FFF?style=flat&logo=amazonrds&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-4479A1?style=flat&logo=mysql&logoColor=white)
+![Sequelize](https://img.shields.io/badge/Sequelize-52B0E7?style=flat&logo=sequelize&logoColor=white)
 ![Redis](https://img.shields.io/badge/Redis-DC382D?style=flat&logo=redis&logoColor=white)
 
 </td></tr>
@@ -110,6 +115,8 @@ I'm a **Generative AI and Agentic AI engineer** with nearly **3 years** of softw
 ![AWS](https://img.shields.io/badge/AWS-232F3E?style=flat&logo=amazonwebservices&logoColor=white)
 ![EKS](https://img.shields.io/badge/EKS-FF9900?style=flat&logo=amazoneks&logoColor=white)
 ![Lambda](https://img.shields.io/badge/Lambda-FF9900?style=flat&logo=awslambda&logoColor=white)
+![MediaLive](https://img.shields.io/badge/MediaLive%20%2F%20MediaPackage-FF9900?style=flat&logo=amazonwebservices&logoColor=white)
+![Transcribe](https://img.shields.io/badge/Transcribe%20Streaming-FF9900?style=flat&logo=amazonwebservices&logoColor=white)
 ![EC2](https://img.shields.io/badge/EC2-FF9900?style=flat&logo=amazonec2&logoColor=white)
 ![S3](https://img.shields.io/badge/S3-569A31?style=flat&logo=amazons3&logoColor=white)
 ![SNS](https://img.shields.io/badge/SNS-FF4F8B?style=flat&logo=amazonsimpleemailservice&logoColor=white)
@@ -129,18 +136,66 @@ I'm a **Generative AI and Agentic AI engineer** with nearly **3 years** of softw
 ![OpenCV](https://img.shields.io/badge/OpenCV-5C3EE8?style=flat&logo=opencv&logoColor=white)
 ![Whisper](https://img.shields.io/badge/Whisper-412991?style=flat)
 ![FFmpeg](https://img.shields.io/badge/FFmpeg-007808?style=flat&logo=ffmpeg&logoColor=white)
+![hls.js](https://img.shields.io/badge/hls.js-555555?style=flat)
+![Web Audio API](https://img.shields.io/badge/Web%20Audio%20API-555555?style=flat)
 
 </td></tr>
 </table>
 
 ---
 
-## Featured projects
+## Featured client projects
 
-### 🎬 Clipora AI: GenAI & Agentic AI video editor
+### <img src="https://www.google.com/s2/favicons?domain=ndtvprofit.com&sz=128" width="28" align="center" alt="NDTV Profit logo"/> NDTV Profit: GenAI & Agentic AI media automation platform
+*Applied Cloud Computing · from proof of concept to production · backend, AI pipeline and editor UI*
+
+NDTV Profit is one of India's leading business news broadcasters. The platform automates their post-production work: it records the live broadcast stream, transcribes it, cuts it into stories, and has a team of AI agents write the YouTube titles, descriptions, hashtags and thumbnail text, ready for an editor to approve and publish. A manual job that took hours now takes minutes, with no human step until review.
+
+`AWS Bedrock (Claude Sonnet 4.5)` `Multi-Agent Orchestration` `LangGraph` `LangChain` `RAG` `pgvector` `Node.js` `TypeScript` `Express 5` `MySQL` `AWS MediaLive` `AWS MediaPackage` `AWS Transcribe` `SNS` `S3` `FFmpeg` `EKS` `Next.js` `React` `hls.js`
+
+```mermaid
+flowchart LR
+  A[Live broadcast<br/>MediaLive] --> B[MediaPackage<br/>HLS]
+  B --> C[Live transcription<br/>Transcribe Streaming]
+  B --> D[Clip harvest<br/>HLS → MP4 + SRT]
+  D --> E[Segmentor agent]
+  E --> F[YouTube optimizer agent]
+  E --> G[Thumbnail title agent]
+  F --> H[Editorial review<br/>→ YouTube / social]
+  G --> H
+```
+
+- **3-stage multi-agent pipeline on AWS Bedrock.** A **segmentor agent** splits a 15-minute to 3-hour broadcast into stories with full timecode coverage. A **YouTube optimizer agent** and a **thumbnail title agent** then run **in parallel** for every segment, each producing 4 options.
+- **Prompt and schema engineering over 4 iterations:** strict JSON output, a self-correcting gap check, segment-count targets scaled to video length and interview-integrity rules. Together they fixed over-segmentation, zero-segment results and timecode gaps.
+- **Grounded generation:** RAG over the broadcast archive with hybrid dense and lexical search, reciprocal rank fusion and a cross-encoder reranker, gated in CI on Recall@10, MRR, faithfulness and p95 latency.
+- **Live transcription at scale:** up to **10 concurrent live sessions**. FFmpeg streams 16 kHz audio straight into AWS Transcribe Streaming, with silence-packet keep-alives that beat the 15-second idle timeout, and health checks that restart a stalled session automatically.
+- **6-phase harvest pipeline:** a MediaPackage harvest job, HLS → MP4 → MP3 with FFmpeg, then batch transcription with SRT output. It runs on an idempotent state machine driven by AWS SNS events and pollers.
+- **Unattended scheduling:** a database-backed cron scheduler starts and stops channels, recording and transcription on weekly schedules, with atomic execution and retries.
+- **Production hardening:** I traced a Kubernetes crash loop to malformed LLM output and fixed it with schema validation at every agent boundary and per-agent failure isolation. Deployed on **AWS EKS** with autoscaling, probes, zero-downtime releases and OpenTelemetry tracing.
+- **Editor UI:** a custom video editor built from scratch, with a canvas multi-track timeline (react-konva), HLS playback (hls.js), a Web Audio waveform and frame-accurate trims. It also has a streaming AI chat assistant (SSE) and one-click publishing to YouTube, Instagram, LinkedIn and X.
+
+### <img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/AXISBank_Logo.svg" width="28" align="center" alt="Axis Bank logo"/> Axis Bank: Agentic AI IT assistant & automation platform
+*Applied Cloud Computing · regulated banking · sole engineer for the Python service and data layer*
+
+An internal platform that lets the bank's IT support staff diagnose and fix employee machines in real time, now being extended with an **AI agent** so employees can solve routine requests themselves.
+
+`Azure AI Foundry` `Tool Calling` `Microsoft Entra ID` `Python` `FastAPI` `Aurora PostgreSQL` `OAuth 2.0 + PKCE` `AWS EKS` `Kubernetes` `Next.js` `.NET` `SignalR`
+
+- **Azure AI Foundry agent with tool calling:** I'm exposing the bank's operational APIs to the agent as callable tools, so an employee can resolve a routine device or access request by asking an assistant instead of raising a support ticket.
+- **Permission-safe by design:** every tool call runs on the requesting user's scoped credentials through **Microsoft Entra ID**, so the agent can never act beyond that user's own permissions.
+- Built the **Python FastAPI** service and **Aurora PostgreSQL** data layer behind the bank's device inventory (schema design, migrations, indexing, schema-level isolation).
+- Deployed **4 production microservices** on **AWS EKS**: a Next.js console, an ASP.NET Core orchestrator with a SignalR hub, the FastAPI inventory service and its UI. The platform uses OAuth 2.0 + PKCE, path-based ALB ingress and HPA autoscaling.
+
+---
+
+## Featured personal projects
+
+### <img src="assets/clipora.svg" width="28" align="center" alt="Clipora logo"/> Clipora AI: GenAI & Agentic AI video editor
 **[Backend](https://github.com/aarafbhaijan/Clipora-GenAI-AgenticAI-Backend) · [Frontend](https://github.com/aarafbhaijan/Clipora-GenAI-AgenticAI-Frontend)** · *Personal project, sole author*
 
 Chat with an agent to turn long videos into short vertical clips. The agent plans the clips, frames whoever is speaking and exports the result.
+
+> 💡 **Inspired by the NDTV Profit platform above.** After building that agentic pipeline for a news broadcaster, I built my own take on the same media use case for creators: instead of a scheduled pipeline over a live channel, you upload a video (or paste a YouTube link) and **direct the agent through chat**. It runs on open models (Groq, Ollama) as well as AWS Bedrock, and adds computer vision so the crop follows whoever is speaking.
 
 `Python` `FastAPI` `LangGraph` `PostgreSQL` `pgvector` `YOLOv8` `ByteTrack` `MediaPipe` `Whisper` `FFmpeg` `Next.js` `TypeScript` `Ant Design`
 
@@ -182,7 +237,7 @@ A JSON API that sells assigned seats and stays correct under an on-sale stampede
 ### Software Engineer · Applied Cloud Computing
 *August 2025 – Present · Mumbai, India · Clients: NDTV Profit, Axis Bank*
 
-**NDTV Profit: Generative AI platform over an enterprise content archive** (sole engineer, from proof of concept to production)
+<img src="https://www.google.com/s2/favicons?domain=ndtvprofit.com&sz=128" width="18" align="center" alt=""/> **NDTV Profit: Generative AI platform over an enterprise content archive** (sole engineer, from proof of concept to production · [details](#featured-client-projects))
 - Built a **generative AI multi-agent system** on **AWS Bedrock** with **LangGraph and LangChain** that turns a business news channel's broadcast archive into publish-ready content. A planning agent dispatches specialist agents in parallel through typed Pydantic schemas, with session state in PostgreSQL.
 - Built the **RAG pipeline** that grounds generation in the archive (chunking, embeddings, pgvector). When dense retrieval alone kept missing relevant passages, I moved it to **hybrid dense and lexical search with reciprocal rank fusion and a cross-encoder reranker**, measured with Recall@10 and MRR.
 - Turned that evaluation into a **CI quality gate** on Recall@10, MRR, faithfulness and p50/p95 latency, so a prompt or chunking change that lowers quality fails the build before it reaches production.
@@ -190,7 +245,7 @@ A JSON API that sells assigned seats and stays correct under an on-sale stampede
 - Automated a **six-stage content workflow** with scheduled jobs, AWS SNS events and atomic job pickup. The ingestion pipeline runs ten concurrent live sessions with self-healing health checks.
 - Deployed on **AWS EKS** with autoscaling, liveness and readiness probes, and zero-downtime rolling releases, traced end to end with **OpenTelemetry**.
 
-**Axis Bank: enterprise IT automation platform** (sole engineer for the Python service and data layer)
+<img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/AXISBank_Logo.svg" width="18" align="center" alt=""/> **Axis Bank: Agentic AI IT assistant & automation platform** (sole engineer for the Python service and data layer)
 - Built the **Python FastAPI** service and **Aurora PostgreSQL** data layer behind the bank's device inventory, and deployed four microservices on Kubernetes with **OAuth 2.0 and PKCE**.
 - I'm currently exposing those APIs to an **Azure AI Foundry agent through tool calling**, authorised through Microsoft Entra ID, so the agent can act only within the requesting user's own permissions.
 
